@@ -7,9 +7,9 @@
     "p": "How are you doing today?",
     "p": {
       "div": {
-        "classes": ["trivia"],
+        "class": ["trivia"],
         "span": {
-          "classes": ["trivia-title"],
+          "class": ["trivia-title"],
           "innerHtml": "Did you know?"
         },
         "span": "that his page you are seeing uses json-html?"
