@@ -15,9 +15,47 @@
         "span": "that his page you are seeing uses json-html?"
       }
     },
+    
+// START still trying to figure out how to replicate inline tags like <a>
+
+// option 1
+
     "div": {
       "class": "footer",
-      "innerHtml": "Click here to know more!"
+      "innerHtml": {
+        "text": {
+          "text": "Click here",
+          "a": "https://github.com/json-html"
+        },
+        "text": "to know more!"
+      }
+    },
+    
+// option 2
+
+    "div": {
+      "class": "footer",
+      "innerHtml": {
+        "text": {
+          "a": {
+            "innerHtml": "Click here"
+            "href": "https://github.com/json-html"
+          }
+        },
+        "text": "to know more!"
+      }
+    },
+    
+// option 3
+
+    "div": {
+      "class": "footer",
+      "innerHtml": {
+        "text": "Click here to know more!"
+      }
+
+// END 
+
     }
   }
 }
