@@ -1,0 +1,23 @@
+{
+  "head": {
+    "title": "An example web page written with json-html"
+  },
+  "body": {
+    "h3": "Hello, world!",
+    "p": "How are you doing today?",
+    "p": {
+      "div": {
+        "classes": ["trivia"],
+        "span": {
+          "classes": ["trivia-title"],
+          "innerHtml": "Did you know?"
+        },
+        "span": "that his page you are seeing uses json-html?"
+      }
+    },
+    "div": {
+      "class": "footer",
+      "innerHtml": "Click here to know more!"
+    }
+  }
+}
